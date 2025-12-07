@@ -18,6 +18,7 @@ import theme from "./theme/theme.ts";
 import ElectricBill from "./pages/Features/ElectricBill.tsx";
 import SendMoney from "./pages/Features/SendMoney.tsx";
 import TransactionHistory from "./pages/Features/TransactionHistory.tsx";
+import Main from "./pages/Main.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/main" element={<Main />} />
     </Route>
   )
 );
